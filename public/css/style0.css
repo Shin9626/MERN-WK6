@@ -1,0 +1,396 @@
+body{
+  font-family: Microsoft JhengHei, "微軟正黑體";
+  font-weight: bolder;
+  float: center;
+  width: 100%;
+  height: 100%;
+}
+
+.pic{
+  padding: 5px;
+  vertical-align: middle;
+}
+
+#logo{
+  max-height: 25px;
+}
+
+/*----navbar----*/
+#navwrap {
+  margin: 0;
+}
+
+.navbar-inverse {
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.dropdown-menu {
+  text-align: center;
+  background-color: rgb(51, 51, 51);
+}
+
+.dropdown-menu li a {
+  color: white;
+}
+
+.navbar{
+  font-size: 120%;
+}
+
+.nav-button:hover{
+  background-color: rgba(200, 200, 200,0.2);
+}
+
+/*----HOME----*/
+#logo-lg{
+  position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max - height: 100 % ;
+    max - width: 100 % ;
+    width: 100%;
+}
+
+.Junbotron{
+  margin-top:50px ;
+  text-align: center;
+  background-image: url(../img/jumbo01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+  height: 600px;
+
+  -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+
+/*----introduce----*/
+.Junbo01 img{
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+
+  -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+
+
+.Junbo01{
+  margin-top:50px ;
+  text-align: center;
+}
+/*------Carousel--------- */
+#myCarousel {
+  margin-top: 60px;
+  border-top: 20px solid #1F1F1F;
+  -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+
+.carousel-inner{
+  background-color: rgb(30, 30, 30);
+}
+.carousel-caption {
+
+  font-size: 24px;
+}
+
+.carousel-caption h4 {
+  font-size: 32px;
+}
+
+#myCarousel .item {height: 700px;}
+#slide1 {
+  background: url('../img/c1.jpg') top center no-repeat;
+}
+
+#slide2 {
+  background: url('../img/c2.jpg') top center no-repeat;
+}
+
+#slide3 {
+  background: url('../img/c3.jpg') top center no-repeat;
+}
+/*----TABS----*/
+#center-tab{
+  float: none;
+  display: inline-block;
+}
+
+#center-tab1{
+  float: none;
+  display: inline-block;
+}
+
+#center-tab2{
+  float: none;
+  display: inline-block;
+}
+
+.thumbnail{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.nav-tabs{
+  text-align: center;
+}
+
+#myTab {
+  margin-top: 30px;
+  -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+
+.parag p{
+  padding-top:10px;
+  padding-bottom: :10px;
+}
+
+.parag img{
+  width: 80%;
+}
+
+/*----Speak----*/
+#Speak{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgb(254 , 254, 254);
+  text-align: center;
+}
+
+#intro p{
+  margin: 5%;
+}
+
+#intro {
+  text-align: center;
+}
+
+.tex{
+  font-size: 40px;
+}
+
+/*----Thumbnail----*/
+#gogo{
+  padding-top: 15px;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+.pic{
+  padding: 15px;
+  width: 60%;
+}
+
+.thumbnail{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.panel-default{
+  text-align: center;
+}
+/*----blog----*/
+.panel-heading{
+  margin-bottom: 10px;
+}
+.pic{
+  width: 80%;
+}
+
+.blog{
+  margin-top: 50px;
+}
+
+.tex{
+  text-align: center;
+  font-size: 40px;
+}
+
+.int{
+  margin-top: 100px;
+}
+
+#gogo{
+  padding-top: 15px;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+}
+
+blog .pic{
+  padding: 15px;
+  width: 60%;
+}
+
+blog .thumbnail{
+  margin-top: 10px;
+  text-align: center;
+}
+
+blog .panel-default{
+  text-align: center;
+}
+/*----contact---*/
+.tex-form{
+  margin: 2%;
+}
+
+.tex{
+
+  font-size: 40px;
+}
+
+.mybox{
+  width: 80%;
+  opacity: 0.5;
+}
+
+.bx2{
+    height: 40px;
+}
+
+.bx1{
+    height: 400px;
+}
+p a{
+  margin-top: 10px;
+}
+
+.Junboform{
+  margin-top:50px ;
+  text-align: center;
+  background-image: url(../img/contactbk.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  position: relative;
+  height: 800px;
+
+  -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 2s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+}
+
+/*----footer----*/
+footer{
+  padding-top: 20px;
+  color:white;
+  border-top: #97CBFF 1px solid;
+  background-color: rgb(51, 51, 51);
+  height:100px;
+  text-align: center;
+}
+
+footer span {
+  vertical-align: middle;
+}
+
+/* --------------------------------------
+Animation Styles
+-------------------------------------- */
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+
+.animate1{
+  opacity: 0;
+}
+
+.animate1.slideInUp{
+  //opacity: 1;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+
+.animate_delay0 {
+  animation-delay: .3s;
+}
+
+.animate_delay1 {
+  animation-delay: .6s;
+}
+
+.animate_delay2 {
+  animation-delay: .9s;
+}
+
+.animate_delay3 {
+  animation-delay: 1.0s;
+}
+
+.animate_delay4 {
+  animation-delay: 1.2s;
+}
+
+.animate_delay5 {
+  animation-delay: 1.5s;
+}
+
+.animate_delay6 {
+  animation-delay: 1.8s;
+}
+
+.animate_delay7 {
+  animation-delay: 2.1s;
+}
+
+.animate_delay8 {
+  animation-delay: 2.4s;
+}
+
+.animate_delay9 {
+  animation-delay: 2.7s;
+}
+/* Large desktop */
+@media (max-width: 1200px) {
+  .tex{
+    font-size: 32px;
+  }
+} /* max 1200px */
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .tex{
+    font-size: 21px;
+  }
+} /* end max768 px */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+  .tex{
+    font-size: 16px;
+  }
+} /*max 480px*/

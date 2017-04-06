@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>OTAKU 543 - ACG交流園地</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/style0.css">
+    <link rel="shortcut icon" href="assets/img/logoicon.ico" />
+  </head>
+  <body>
+    <nav id="navwrap" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="" id="myNav">
+          <div class="navbar-header">
+            <button class="navbar-toggle" data-target="#collapse-navbar" data-toggle="collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img id="logo" src="assets/img/logo.png" alt="Your logo"></a>
+          </div>
+          <!-- end navbar-header -->
+          <div class="navbar-collapse collapse" id="collapse-navbar">
+            <ul class="nav navbar-nav">
+              <li class="nav-button b1">
+                <a href="index.html"><span class="glyphicon glyphicon-home"></span> 首頁</a>
+              </li>
+              <li class="nav-button">
+                <a href="intro.html"><span class="glyphicon glyphicon-briefcase"></span> 本站介紹</a>
+              </li>
+              <li class="nav-button">
+                <a href="share.html"><span class="glyphicon glyphicon-film"></span> ACG分享</a>
+              </li>
+              <li class="nav-button">
+                <a href="blog.html"><span class="glyphicon glyphicon-pencil"></span> 宅日誌</a>
+              </li>
+              <li class="nav-button">
+                <a href="contact.html"><span class="glyphicon glyphicon-envelope"></span> 連絡我們</a>
+              </li>
+          </div><!--end nav-collapse-->
+        </div><!--end row-->
+      </div><!--end container-->
+    </nav><!--end nav-->
+
+    <div class="Junboform">
+      <div class="container">
+        <div class="tex">
+          有任何感想或建議，歡迎在表單回覆我們
+        </div>
+        <div class="tex tex-form">
+          輸入您的E-mail：
+        </div>
+         <input class="mybox bx2 " type="text" placeholder="輸入郵件地址方便我們給您回覆唷！">
+        <div class="tex">
+          輸入您要留下的文字：
+        </div>
+        <textarea class="mybox bx1" placeholder="留個言吧！"></textarea>
+        <p>
+          <a id="sumbit" class="btn btn-primary btn-lg" href="">送出表單(╹◡╹)</a>
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <span></span>Copyright © 2016 OTAKU543 All rights reserved
+        <div class="">
+          <span>動畫、遊戲、漫畫之圖片版權階為作者及發行商所有</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="assets/js/jquery-2.1.4.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      //reference to firebase
+      var messagesRef = new Firebase('https://comform39.firebaseio.com/');
+
+      $("#sumbit").click(function(){
+        //catch the DOM elements
+        var emailField = $('.bx2');
+        var commentField = $('.bx1');
+        //FIELD VALUES
+        var userEmail = emailField.val();
+        var userComment = commentField.val();
+        //SAVE DATA TO FIREBASE AND EMPTY FIELD
+        messagesRef.push({emailAddress:userEmail, comment:userComment});
+        window.alert('您的表單已送出，我們將盡快回覆，記得去您剛才填入的信箱確認回函唷！');
+      });
+    });
+
+  </script>
+</html>
